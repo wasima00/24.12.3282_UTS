@@ -1,0 +1,102 @@
+<!--
+Nama   : Wasima Juhaina
+NIM    : 24.12.3282
+Kelas  : SI-04
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kerjasama</title>
+  <link rel="stylesheet" href="stylekerjasama.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kerjasama.html" class="active">Kerjasama</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Kerjasama</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Formulir Penawaran Kerjasama</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <table>
+          <tr>
+            <td><label for="nama">Nama</label></td>
+            <td><input type="text" id="nama" name="nama" required></td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td><input type="text" id="alamat" name="alamat" required></td>
+          </tr>
+          <tr>
+            <td><label for="nowa">No.WA</label></td>
+            <td><input type="text" id="nowa" name="nowa" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" name="gender" value="Laki-Laki" id="lk">
+              <label for="lk">Laki-Laki</label>
+              <input type="radio" name="gender" value="Perempuan" id="pr">
+              <label for="pr">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Bidang Kerjasama</td>
+            <td>
+              <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
+              <input type="checkbox" name="bidang" value="WebDev"> Web Dev
+              <input type="checkbox" name="bidang" value="Fintech"> Fintech
+            </td>
+          </tr>
+          <tr>
+            <td><label for="file">File Penawaran</label></td>
+            <td><input type="file" id="file" name="file"></td>
+          </tr>
+          <tr>
+            <td><label for="tanggal">Tanggal Pelaksanaan</label></td>
+            <td><input type="date" id="tanggal" name="tanggal"></td>
+          </tr>
+          <tr>
+            <td><label for="domisili">Domisili</label></td>
+            <td>
+              <select id="domisili" name="domisili">
+                <option>--Pilih Domisili--</option>
+                <option>Yogyakarta</option>
+                <option>Jakarta</option>
+                <option>Bandung</option>
+                <option>Surabaya</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wasima Juhaina.</p>
+  </footer>
+
+</body>
+</html>
