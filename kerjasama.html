@@ -10,14 +10,20 @@ Kelas  : SI-04
   <meta charset="UTF-8">
   <title>Kerjasama</title>
   <link rel="stylesheet" href="stylekerjasama.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="kerjasama.html" class="active">Kerjasama</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <img src="aset/logo_ima.png" alt="">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="kerjasama.html" class="active">Collaboration</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -27,69 +33,56 @@ Kelas  : SI-04
   <main>
     <section class="form-section">
       <h2>Formulir Penawaran Kerjasama</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
-        <table>
-          <tr>
-            <td><label for="nama">Nama</label></td>
-            <td><input type="text" id="nama" name="nama" required></td>
-          </tr>
-          <tr>
-            <td><label for="alamat">Alamat</label></td>
-            <td><input type="text" id="alamat" name="alamat" required></td>
-          </tr>
-          <tr>
-            <td><label for="nowa">No.WA</label></td>
-            <td><input type="text" id="nowa" name="nowa" required></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="email" id="email" name="email" required></td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>
-              <input type="radio" name="gender" value="Laki-Laki" id="lk">
-              <label for="lk">Laki-Laki</label>
-              <input type="radio" name="gender" value="Perempuan" id="pr">
-              <label for="pr">Perempuan</label>
-            </td>
-          </tr>
-          <tr>
-            <td>Bidang Kerjasama</td>
-            <td>
-              <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
-              <input type="checkbox" name="bidang" value="WebDev"> Web Dev
-              <input type="checkbox" name="bidang" value="Fintech"> Fintech
-            </td>
-          </tr>
-          <tr>
-            <td><label for="file">File Penawaran</label></td>
-            <td><input type="file" id="file" name="file"></td>
-          </tr>
-          <tr>
-            <td><label for="tanggal">Tanggal Pelaksanaan</label></td>
-            <td><input type="date" id="tanggal" name="tanggal"></td>
-          </tr>
-          <tr>
-            <td><label for="domisili">Domisili</label></td>
-            <td>
-              <select id="domisili" name="domisili">
-                <option>--Pilih Domisili--</option>
-                <option>Yogyakarta</option>
-                <option>Jakarta</option>
-                <option>Bandung</option>
-                <option>Surabaya</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <button type="submit">Submit</button>
-              <button type="reset">Reset</button>
-            </td>
-          </tr>
-        </table>
+      <form action="#" method="post" enctype="multipart/form-data" class="modern-form">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat</label>
+          <input type="text" id="alamat" name="alamat" required>
+        </div>
+        <div class="form-group">
+          <label for="nowa">No.WA</label>
+          <input type="text" id="nowa" name="nowa" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="lk">Laki-Laki</label>
+          <input type="radio" name="gender" value="Laki-Laki" id="lk">
+          <label for="pr">Perempuan</label>
+          <input type="radio" name="gender" value="Perempuan" id="pr">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
+          <input type="checkbox" name="bidang" value="WebDev"> Web Dev
+          <input type="checkbox" name="bidang" value="Fintech"> Fintech
+        </div>
+        <div class="form-group">
+          <label for="file">File Penawaran</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <div class="form-group">
+          <label for="tanggal">Tanggal Pelaksanaan</label>
+          <input type="date" id="tanggal" name="tanggal">
+        </div>
+        <div class="form-group">
+          <label for="domisili">Domisili</label>
+          <select id="domisili" name="domisili">
+            <option>--Pilih Domisili--</option>
+            <option>Yogyakarta</option>
+            <option>Jakarta</option>
+            <option>Bandung</option>
+            <option>Surabaya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </section>
   </main>
