@@ -5,91 +5,87 @@ Kelas  : SI-04
 -->
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kerjasama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaboration</title>
   <link rel="stylesheet" href="stylekerjasama.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="kerjasama.html" class="active">Kerjasama</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <img src="aset/logo_wj.png" alt="Logo Wasima Juhaina">
+        <span class="logo-text">Wasima Juhaina</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kerjasama.html" class="active">Collaboration</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
-    <h1>Kerjasama</h1>
+    <h1>Collaboration</h1>
   </header>
 
   <main>
     <section class="form-section">
-      <h2>Formulir Penawaran Kerjasama</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
-        <table>
-          <tr>
-            <td><label for="nama">Nama</label></td>
-            <td><input type="text" id="nama" name="nama" required></td>
-          </tr>
-          <tr>
-            <td><label for="alamat">Alamat</label></td>
-            <td><input type="text" id="alamat" name="alamat" required></td>
-          </tr>
-          <tr>
-            <td><label for="nowa">No.WA</label></td>
-            <td><input type="text" id="nowa" name="nowa" required></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="email" id="email" name="email" required></td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>
-              <input type="radio" name="gender" value="Laki-Laki" id="lk">
-              <label for="lk">Laki-Laki</label>
-              <input type="radio" name="gender" value="Perempuan" id="pr">
-              <label for="pr">Perempuan</label>
-            </td>
-          </tr>
-          <tr>
-            <td>Bidang Kerjasama</td>
-            <td>
-              <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
-              <input type="checkbox" name="bidang" value="WebDev"> Web Dev
-              <input type="checkbox" name="bidang" value="Fintech"> Fintech
-            </td>
-          </tr>
-          <tr>
-            <td><label for="file">File Penawaran</label></td>
-            <td><input type="file" id="file" name="file"></td>
-          </tr>
-          <tr>
-            <td><label for="tanggal">Tanggal Pelaksanaan</label></td>
-            <td><input type="date" id="tanggal" name="tanggal"></td>
-          </tr>
-          <tr>
-            <td><label for="domisili">Domisili</label></td>
-            <td>
-              <select id="domisili" name="domisili">
-                <option>--Pilih Domisili--</option>
-                <option>Yogyakarta</option>
-                <option>Jakarta</option>
-                <option>Bandung</option>
-                <option>Surabaya</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <button type="submit">Submit</button>
-              <button type="reset">Reset</button>
-            </td>
-          </tr>
-        </table>
+      <h2>Collaboration Proposal Form</h2>
+      <form action="#" method="post" enctype="multipart/form-data" class="modern-form">
+        <div class="form-group">
+          <label for="nama">Name</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Address</label>
+          <input type="text" id="alamat" name="alamat" required>
+        </div>
+        <div class="form-group">
+          <label for="nowa">WhatsApp Number</label>
+          <input type="text" id="nowa" name="nowa" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="lk">Male</label>
+          <input type="radio" name="gender" value="Male" id="lk">
+          <label for="pr">Female</label>
+          <input type="radio" name="gender" value="Female" id="pr">
+        </div>
+        <div class="form-group">
+          <label for="bidang">Field of Interest</label>
+          <input type="checkbox" name="field" value="UI/UX"> UI/UX
+          <input type="checkbox" name="field" value="Digital Marketing"> Digital Marketing
+          <input type="checkbox" name="field" value="Data Science"> Data Science
+        </div>
+        <div class="form-group">
+          <label for="file">Proposal File</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <div class="form-group">
+          <label for="tanggal">Implementation Date</label>
+          <input type="date" id="tanggal" name="tanggal">
+        </div>
+        <div class="form-group">
+          <label for="domisili">Location</label>
+          <select id="domisili" name="domisili">
+            <option>--Select Location--</option>
+            <option>Daerah Istimewa Yogyakarta</option>
+            <option>Kalimantan Tengah</option>
+            <option>Jawa Tengah</option>
+            <option>Sulawesi Utara</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </section>
   </main>
