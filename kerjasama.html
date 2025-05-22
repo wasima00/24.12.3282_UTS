@@ -12,18 +12,14 @@ Kelas  : SI-04
   <title>Collaboration</title>
   <link rel="stylesheet" href="stylekerjasama.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-
   <nav class="navbar">
     <div class="nav-content">
       <div class="logo">
         <img src="aset/logo_wj.png" alt="Logo Wasima Juhaina">
         <span class="logo-text">Wasima Juhaina</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <img src="aset/logo_ima.png" alt="">
       </div>
       <ul class="nav-links">
         <li><a href="index.html" >Home</a></li>
@@ -46,19 +42,7 @@ Kelas  : SI-04
         </div>
         <div class="form-group">
           <label for="alamat">Address</label>
-          <input type="text" id="alamat" name="alamat" required>
-        </div>
-        <div class="form-group">
-          <label for="nowa">WhatsApp Number</label>
-      <h2>Formulir Penawaran Kerjasama</h2>
-      <form action="#" method="post" enctype="multipart/form-data" class="modern-form">
-        <div class="form-group">
-          <label for="nama">Nama</label>
-          <input type="text" id="nama" name="nama" required>
-        </div>
-        <div class="form-group">
-          <label for="alamat">Alamat</label>
-          <input type="text" id="alamat" name="alamat" required>
+          <textarea id="alamat" name="alamat" rows="3" required></textarea>
         </div>
         <div class="form-group">
           <label for="nowa">No.WA</label>
@@ -86,7 +70,7 @@ Kelas  : SI-04
         </div>
         <div class="form-group">
           <label for="tanggal">Implementation Date</label>
-          <input type="date" id="tanggal" name="tanggal">
+          <input type="datetime-local" id="tanggal" name="tanggal">
         </div>
         <div class="form-group">
           <label for="domisili">Location</label>
@@ -96,32 +80,6 @@ Kelas  : SI-04
             <option>Kalimantan Tengah</option>
             <option>Jawa Tengah</option>
             <option>Sulawesi Utara</option>
-          <label for="lk">Laki-Laki</label>
-          <input type="radio" name="gender" value="Laki-Laki" id="lk">
-          <label for="pr">Perempuan</label>
-          <input type="radio" name="gender" value="Perempuan" id="pr">
-        </div>
-        <div class="form-group">
-          <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
-          <input type="checkbox" name="bidang" value="WebDev"> Web Dev
-          <input type="checkbox" name="bidang" value="Fintech"> Fintech
-        </div>
-        <div class="form-group">
-          <label for="file">File Penawaran</label>
-          <input type="file" id="file" name="file">
-        </div>
-        <div class="form-group">
-          <label for="tanggal">Tanggal Pelaksanaan</label>
-          <input type="date" id="tanggal" name="tanggal">
-        </div>
-        <div class="form-group">
-          <label for="domisili">Domisili</label>
-          <select id="domisili" name="domisili">
-            <option>--Pilih Domisili--</option>
-            <option>Yogyakarta</option>
-            <option>Jakarta</option>
-            <option>Bandung</option>
-            <option>Surabaya</option>
           </select>
         </div>
         <div class="form-group">
@@ -133,8 +91,18 @@ Kelas  : SI-04
   </main>
 
   <footer>
-    <p>&copy; 2025 Wasima Juhaina.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Wasima Juhaina</p>
+      <div class="social-links">
+        <a href="https://instagram.com/wsmajhna_" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/wasima00" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="social-links">
+        <a href="https://youtube.com/imawsm" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
   </footer>
-
 </body>
 </html>
